@@ -40,7 +40,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>806,3137</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>993,3686</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
@@ -96,7 +96,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Description:Translates and converts the specified Xaml file.&#xA;=====================&#xA;The MIT License (MIT)&#xA;Copyright (c) 2020 Jun Shiomi&#xA;=====================" DisplayName="TranslateWorkflowFile Sequence" sap:VirtualizedContainerService.HintSize="786,3037" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description:Translates and converts the specified Xaml file.&#xA;=====================&#xA;The MIT License (MIT)&#xA;Copyright (c) 2020 Jun Shiomi&#xA;=====================" DisplayName="TranslateWorkflowFile Sequence" sap:VirtualizedContainerService.HintSize="973,3586" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="XamlText" />
       <Variable x:TypeArguments="x:Int32" Name="counter" />
@@ -110,7 +110,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If sap2010:Annotation.AnnotationText="Default timeout is 30 seconds" Condition="[TimeoutMilliseconds  = 0]" sap:VirtualizedContainerService.HintSize="744,235" sap2010:WorkflowViewState.IdRef="If_2">
+    <If sap2010:Annotation.AnnotationText="Default timeout is 30 seconds" Condition="[TimeoutMilliseconds  = 0]" sap:VirtualizedContainerService.HintSize="931,235" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -137,8 +137,8 @@
         </Assign>
       </If.Else>
     </If>
-    <ui:ReadTextFile Content="[XamlText]" DisplayName="Read Xaml File" FileName="[SourceFilename]" sap:VirtualizedContainerService.HintSize="744,59" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-    <Assign sap:VirtualizedContainerService.HintSize="744,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:ReadTextFile Content="[XamlText]" DisplayName="Read Xaml File" FileName="[SourceFilename]" sap:VirtualizedContainerService.HintSize="931,59" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <Assign sap:VirtualizedContainerService.HintSize="931,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
       </Assign.To>
@@ -146,8 +146,8 @@
         <InArgument x:TypeArguments="x:Int32">0</InArgument>
       </Assign.Value>
     </Assign>
-    <DoWhile DisplayName="Do While " sap:VirtualizedContainerService.HintSize="744,2257" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[counter &lt;  3]">
-      <Sequence sap:VirtualizedContainerService.HintSize="698,2095" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <DoWhile DisplayName="Do While " sap:VirtualizedContainerService.HintSize="931,2806" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[counter &lt;  3]">
+      <Sequence sap:VirtualizedContainerService.HintSize="885,2644" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <Sequence.Variables>
           <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="Trans" />
         </Sequence.Variables>
@@ -156,7 +156,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Switch x:TypeArguments="x:Int32" sap2010:Annotation.AnnotationText="Extract strings to translate.&#xA;0:Annotation 1:DisplayName 2:Comment" DisplayName="Switch Case  - Annotation or DisplayName or Comment" Expression="[counter]" sap:VirtualizedContainerService.HintSize="656,224" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+        <Switch x:TypeArguments="x:Int32" sap2010:Annotation.AnnotationText="Extract strings to translate.&#xA;0:Annotation 1:DisplayName 2:Comment" DisplayName="Switch Case  - Annotation or DisplayName or Comment" Expression="[counter]" sap:VirtualizedContainerService.HintSize="843,224" sap2010:WorkflowViewState.IdRef="Switch`1_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -166,7 +166,7 @@
           <ui:Matches x:Key="1" BuilderPattern="DisplayName=&quot;(.*?)&quot;" DisplayName="Matches DisplayName" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[XamlText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;DisplayName=\&quot;(.*?)\&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="DisplayName=&quot;(.*?)&quot;" RegexOption="None" Result="[Trans]" />
           <ui:Matches x:Key="2" BuilderPattern="WorkflowViewState.IdRef=&quot;Comment_[0-9]+&quot; Text=&quot;(.*?)&quot;" DisplayName="Matches Comment" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[XamlText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;WorkflowViewState.IdRef=\&quot;Comment_[0-9]+\&quot; Text=\&quot;(.*?)\&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="WorkflowViewState.IdRef=&quot;Comment_[0-9]+&quot; Text=&quot;(.*?)&quot;" RegexOption="None" Result="[Trans]" />
         </Switch>
-        <Assign sap:VirtualizedContainerService.HintSize="656,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign sap:VirtualizedContainerService.HintSize="843,60" sap2010:WorkflowViewState.IdRef="Assign_2">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
           </Assign.To>
@@ -174,8 +174,8 @@
             <InArgument x:TypeArguments="x:Int32">0</InArgument>
           </Assign.Value>
         </Assign>
-        <While DisplayName="While" sap:VirtualizedContainerService.HintSize="656,1539" sap2010:WorkflowViewState.IdRef="While_1" Condition="[Trans.count &gt; index]">
-          <Sequence DisplayName="all extracted strings are translated" sap:VirtualizedContainerService.HintSize="610,1381" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <While DisplayName="While" sap:VirtualizedContainerService.HintSize="843,2088" sap2010:WorkflowViewState.IdRef="While_1" Condition="[Trans.count &gt; index]">
+          <Sequence DisplayName="all extracted strings are translated" sap:VirtualizedContainerService.HintSize="797,1930" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Text" />
               <Variable x:TypeArguments="x:String" Name="st" />
@@ -186,7 +186,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="755,60" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[Text]</OutArgument>
               </Assign.To>
@@ -194,7 +194,7 @@
                 <InArgument x:TypeArguments="x:String">[Trans(index).Groups(1).ToString.Replace("&amp;#xA;",vbCRLF)]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Decode" sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign DisplayName="Decode" sap:VirtualizedContainerService.HintSize="755,60" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[Text]</OutArgument>
               </Assign.To>
@@ -202,87 +202,119 @@
                 <InArgument x:TypeArguments="x:String">[HttpUtility.HtmlDecode(Text)]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:RetryScope sap2010:Annotation.AnnotationText="Error retry: Wait 15 seconds and retry 3 times." DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="568,589" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:15">
-              <ui:RetryScope.ActivityBody>
-                <ActivityAction>
-                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="526,388" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request-GAS Translation" EndPoint="[WebApplicationURL+&quot;?text=&quot;+Text+&quot;&amp;source=&quot;+SourceLanguage+&quot;&amp;target=&quot;+TargetLanguage]" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[TextTrans]" StatusCode="[Status]" TimeoutMS="[pTimeout]">
-                      <ui:HttpClient.Attachments>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Attachments>
-                      <ui:HttpClient.Cookies>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Cookies>
-                      <ui:HttpClient.Headers>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Headers>
-                      <ui:HttpClient.Parameters>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.Parameters>
-                      <ui:HttpClient.UrlSegments>
-                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                      </ui:HttpClient.UrlSegments>
-                    </ui:HttpClient>
-                    <If sap2010:Annotation.AnnotationText="Throw if error" Condition="[Status &lt;&gt; 200 Or TextTrans.IndexOf(&quot;&lt;!DOCTYPE&quot;) &lt;&gt; -1]" DisplayName="If" sap:VirtualizedContainerService.HintSize="484,234" sap2010:WorkflowViewState.IdRef="If_1">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If.Then>
-                        <Throw Exception="[new Exception(&quot;Status code: &quot; + status.ToString + &quot;. Response: &quot; + TextTrans)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
-                      </If.Then>
-                    </If>
-                  </Sequence>
-                </ActivityAction>
-              </ui:RetryScope.ActivityBody>
-              <ui:RetryScope.Condition>
-                <ActivityFunc x:TypeArguments="x:Boolean" />
-              </ui:RetryScope.Condition>
+            <If sap2010:Annotation.AnnotationText="If the character string to be translated contains a specific character, it cannot be translated correctly and will be skipped in the current version." Condition="[Text.Contains(&quot;#&quot;) = False and  Text.Contains(&quot;&amp;&quot;) = False and  Text.Contains(&quot;+&quot;) = False]" sap:VirtualizedContainerService.HintSize="755,1538" sap2010:WorkflowViewState.IdRef="If_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-            </ui:RetryScope>
-            <Assign DisplayName="Encode" sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_5">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[TextTrans]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[HttpUtility.HtmlEncode(TextTrans)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_6">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[TextTrans]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[TextTrans.Replace(vbCRLF,"&amp;#xA;")]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_7">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[st]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Trans(index).Groups(0).ToString.Replace(Trans(index).Groups(1).ToString,TextTrans)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_8">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[XamlText]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[XamlText.Replace(Trans(index).Groups(0).ToString,st)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="568,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="610,1348" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:RetryScope sap2010:Annotation.AnnotationText="Error retry: Wait 15 seconds and retry 3 times." DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="568,589" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:15">
+                    <ui:RetryScope.ActivityBody>
+                      <ActivityAction>
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="526,388" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:HttpClient Body="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" BodyFormat="application/xml" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request-GAS Translation" EndPoint="[WebApplicationURL+&quot;?text=&quot;+Text+&quot;&amp;source=&quot;+SourceLanguage+&quot;&amp;target=&quot;+TargetLanguage]" sap:VirtualizedContainerService.HintSize="484,22" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[TextTrans]" StatusCode="[Status]" TimeoutMS="[pTimeout]">
+                            <ui:HttpClient.Attachments>
+                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                            </ui:HttpClient.Attachments>
+                            <ui:HttpClient.Cookies>
+                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                            </ui:HttpClient.Cookies>
+                            <ui:HttpClient.Headers>
+                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                            </ui:HttpClient.Headers>
+                            <ui:HttpClient.Parameters>
+                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                            </ui:HttpClient.Parameters>
+                            <ui:HttpClient.UrlSegments>
+                              <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                            </ui:HttpClient.UrlSegments>
+                          </ui:HttpClient>
+                          <If sap2010:Annotation.AnnotationText="Throw if error" Condition="[Status &lt;&gt; 200]" DisplayName="If" sap:VirtualizedContainerService.HintSize="484,234" sap2010:WorkflowViewState.IdRef="If_1">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <If.Then>
+                              <Throw Exception="[new Exception(&quot;Status code: &quot; + status.ToString + &quot;. Response: &quot; + TextTrans)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                            </If.Then>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:RetryScope.ActivityBody>
+                    <ui:RetryScope.Condition>
+                      <ActivityFunc x:TypeArguments="x:Boolean" />
+                    </ui:RetryScope.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:RetryScope>
+                  <If sap2010:Annotation.AnnotationText="If translation is successful" Condition="[TextTrans.IndexOf(&quot;&lt;!DOCTYPE&quot;) = -1 and TextTrans &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="568,627" sap2010:WorkflowViewState.IdRef="If_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="304,452" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign DisplayName="Encode" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[TextTrans]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[HttpUtility.HtmlEncode(TextTrans)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[TextTrans]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[TextTrans.Replace(vbCRLF,"&amp;#xA;")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[st]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Trans(index).Groups(0).ToString.Replace(Trans(index).Groups(1).ToString,TextTrans)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="Assign" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[XamlText]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[XamlText.Replace(Trans(index).Groups(0).ToString,st)]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                  </If>
+                </Sequence>
+              </If.Then>
+            </If>
+            <Assign sap:VirtualizedContainerService.HintSize="755,60" sap2010:WorkflowViewState.IdRef="Assign_9">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[index]</OutArgument>
               </Assign.To>
@@ -292,7 +324,7 @@
             </Assign>
           </Sequence>
         </While>
-        <Assign sap:VirtualizedContainerService.HintSize="656,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+        <Assign sap:VirtualizedContainerService.HintSize="843,60" sap2010:WorkflowViewState.IdRef="Assign_10">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
           </Assign.To>
@@ -302,6 +334,6 @@
         </Assign>
       </Sequence>
     </DoWhile>
-    <ui:WriteTextFile DisplayName="Output the translated file" FileName="[OutputFilename]" sap:VirtualizedContainerService.HintSize="744,87" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[XamlText]" />
+    <ui:WriteTextFile DisplayName="Output the translated file" FileName="[OutputFilename]" sap:VirtualizedContainerService.HintSize="931,87" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[XamlText]" />
   </Sequence>
 </Activity>
